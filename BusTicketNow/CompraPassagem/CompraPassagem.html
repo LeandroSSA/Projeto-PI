@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Passagem</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Compra de Passagem</h1>
+    <form id="routeForm" action="#" method="GET">
+        <div class="form-group">
+            <label for="origem">Origem:</label>
+            <input type="text" id="origemInput" name="origem" placeholder="Digite a cidade de origem" required>
+        </div>
+        <div class="form-group">
+            <label for="destino">Destino:</label>
+            <input type="text" id="destinoInput" name="destino" placeholder="Digite a cidade de destino" required>
+        </div>
+        <div class="form-group">
+            <label for="data_partida">Data de Partida:</label>
+            <input type="date" id="data_partida" name="data_partida" required>
+        </div>
+        <div class="form-group">
+            <label for="horario_partida">Horário de Partida:</label>
+            <input type="time" id="horario_partida" name="horario_partida" required>
+        </div>
+        <div class="form-group">
+            <label for="adulto">Adultos:</label>
+            <input type="number" id="adulto" name="adulto" min="1" value="1" required>
+        </div>
+        <div class="form-group">
+            <label for="crianca">Crianças:</label>
+            <input type="number" id="crianca" name="crianca" min="0" value="0">
+        </div>
+        <div class="form-group">
+            <label for="bebe">Bebês:</label>
+            <input type="number" id="bebe" name="bebe" min="0" value="0">
+        </div>
+        <div class="form-group">
+            <button type="submit">Buscar Passagens</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    function initializePlacesAutocomplete() {
+        const origemInput = document.getElementById('origemInput');
+        const destinoInput = document.getElementById('destinoInput');
+
+        const options = {
+            types: ['(cities)'] // Limita os resultados a cidades
+        };
+
+        const autocompleteOrigem = new google.maps.places.Autocomplete(origemInput, options);
+        const autocompleteDestino = new google.maps.places.Autocomplete(destinoInput, options);
+    }
+
+    function calcularTempoChegada() {
+        const horarioPartida = document.getElementById('horario_partida').value;
+        const tempoViagem = 5; // Tempo de viagem em horas (pode ser obtido de uma fonte externa)
+
+        const partida = new Date(`2000-01-01T${horarioPartida}`);
+        const chegada = new Date(partida.getTime() + tempoViagem * 60 * 60 * 1000); // Adiciona tempo de viagem
+
+        const horaChegada = chegada.getHours().toString().padStart(2, '0');
+        const minutoChegada = chegada.getMinutes().toString().padStart(2, '0');
+
+        const tempoChegada = `${horaChegada}:${minutoChegada}`;
+        document.getElementById('horario_chegada').value = tempoChegada;
+    }
+
+    // Inicializa o autocomplete quando a página é carregada
+    google.maps.event.addDomListener(window, 'load', initializePlacesAutocomplete);
+
+    // Atualiza o horário de chegada quando o horário de partida é alterado
+    document.getElementById('horario_partida').addEventListener('change', calcularTempoChegada);
+</script>
+
+<!-- Inclua a API do Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKm0R2LigXeGZHttVRrbsS6WcKvIMg5O4&libraries=places"></script>
+
+</body>
+</html>

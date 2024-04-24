@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Relatório de Vendas</title>
+    <link rel="stylesheet" href="estilo.css"> <!-- Certifique-se de ter um arquivo CSS com este nome -->
+</head>
+<body>
+    <div class="container">
+        <h2>Relatório de Vendas</h2>
+        
+        <!-- Campos de data inicial e data final -->
+        <div class="input-field">
+            <label for="data-inicial">Data Inicial:</label>
+            <input type="date" id="data-inicial" name="data-inicial" required>
+        </div>
+        
+        <div class="input-field">
+            <label for="data-final">Data Final:</label>
+            <input type="date" id="data-final" name="data-final" required>
+        </div>
+        
+        <!-- Checkboxes para percentual de bilhetes cancelados e rotas mais vendidas -->
+        <div class="checkbox-field">
+            <input type="checkbox" id="bilhetes-cancelados" name="bilhetes-cancelados">
+            <label for="bilhetes-cancelados">Percentual de Bilhetes Cancelados</label>
+        </div>
+        
+        <div class="checkbox-field">
+            <input type="checkbox" id="rotas-mais-vendidas" name="rotas-mais-vendidas">
+            <label for="rotas-mais-vendidas">Percentual de Rotas Mais Vendidas</label>
+        </div>
+        
+        <!-- Botões para gerar, fechar e exportar para Excel -->
+        <div class="center">
+            <button type="button" onclick="gerarRelatorio()">Gerar</button>
+            <button class="close-button" onclick="window.close();">Fechar</button>
+            <button onclick="exportarParaExcel()">Exportar para Excel</button>
+        </div>
+    </div>
+
+    <script>
+        function gerarRelatorio() {
+            // Lógica para gerar o relatório com base nos campos selecionados
+            // Implemente conforme suas necessidades
+        }
+
+        function exportarParaExcel() {
+            // Lógica para exportar os dados para um arquivo Excel
+            // Implemente conforme suas necessidades
+        }
+    </script>
+</body>
+</html>

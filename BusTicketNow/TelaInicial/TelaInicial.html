@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            position: relative;
+            padding: 15px;
+            cursor: pointer;
+        }
+        nav ul li:hover {
+            background-color: #555;
+        }
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            z-index: 1000;
+        }
+        nav ul ul li {
+            width: 200px;
+            border-bottom: 1px solid #666;
+        }
+        nav ul ul li:last-child {
+            border-bottom: none;
+        }
+        nav ul li:hover > ul {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li>Administração
+            <ul>
+                <li>Empresa</li>
+                <li>Usuário</li>
+                <li>Versão</li>
+            </ul>
+        </li>
+        <li>Cadastro
+            <ul>
+                <li>Passageiros</li>
+                <li>Rotas de ônibus</li>
+                <li>Horários de partida e chegada</li>
+            </ul>
+        </li>
+        <li>Emissão de Bilhete
+            <ul>
+                <li>
+                    <a href="file:///C:/Users/leand/Documents/CAIRU/PROJETO%20PI/PROJETO%20PI%20-%202%20SEMESTRE/Tela/CompraPassagem/CompraPassagem.html">Incluir</a>    
+                </li>
+                <li>Alterar</li>
+                <li>Cancelar</li>
+                <li>Emitir</li>
+            </ul>
+        </li>
+        <li>Financeiro
+            <ul>
+                <li>Contas a Pagar</li>
+                <li>Contas a Receber</li>
+                <li>Notas Fiscais</li>
+            </ul>
+        </li>
+        <li>Relatório
+            <ul>
+                <li>
+                    <a href="file:///C:/Users/leand/Documents/CAIRU/PROJETO%20PI/PROJETO%20PI%20-%202%20SEMESTRE/Tela/RelatorioDeVendas/RelatorioDeVendas.html">Relatório de Vendas</a>  
+                </li>
+                <li>Relatório de Compras</li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+</body>
+</html>

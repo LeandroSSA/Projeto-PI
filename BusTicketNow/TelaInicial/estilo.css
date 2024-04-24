@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./Imagen/Fundo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+nav {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente para melhor contraste com a imagem de fundo */
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    padding: 15px;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo ao passar o mouse sobre os itens do menu */
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo semi-transparente para submenus */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav ul ul li {
+    width: 200px;
+    border-bottom: 1px solid #666;
+}
+
+nav ul ul li:last-child {
+    border-bottom: none;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul ul {
+        position: static;
+        background-color: inherit;
+        box-shadow: none;
+    }
+
+    nav ul ul li {
+        border-bottom: none;
+    }
+}
