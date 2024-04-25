@@ -6,19 +6,20 @@
 
 body {
     background-image: url('Imagen/background.png');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: 3%;
+    /* justify-content: center; */
+    align-items: center; 
     height: 100vh;
     font-family: Arial, sans-serif;
 }
 
 .container {
-    margin-right: 75%;
-    width: 290px;
+    width: 90%; /* Alterado para 90% */
+    max-width: 350px; /* Adicionado max-width */
     background: #0a000065;
     border-radius: 1%;
     padding-inline-start: 16px;
@@ -34,7 +35,7 @@ body {
 }
 
 /* EFEITO ANIMADO */
-.container::before {
+/* .container::before {
     content: '';
     position: absolute;
     top: -650px;
@@ -49,13 +50,13 @@ body {
 
 .container:hover::before {
     transform: scale(2.5);
-}
+} */
 
 h2 {
     text-align: center;
     margin: 20px;
-    color: rgb(241, 240, 245);
-    font-size: 25px;
+    color: rgb(251, 240, 245);
+    font-size: 30px;
     font-style: oblique;
 }
 
@@ -132,4 +133,11 @@ div a {
 
 div a:hover {
     color: #26a96a;
+}
+
+/* Regra de mídia query para dispositivos menores */
+@media (max-width: 768px) {
+    .container {
+        width: 150%;
+    }
 }
