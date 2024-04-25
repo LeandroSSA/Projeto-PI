@@ -7,10 +7,6 @@ body {
     background-position: center;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
 nav {
     background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente para melhor contraste com a imagem de fundo */
     color: #fff;
@@ -27,10 +23,15 @@ nav ul li {
     position: relative;
     padding: 15px;
     cursor: pointer;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Linha de destaque entre os itens do menu */
+}
+
+nav ul li:first-child {
+    border-top: none; /* Remover a linha de destaque do primeiro item */
 }
 
 nav ul li:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo ao passar o mouse sobre os itens do menu */
+    background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo ao passar o mouse sobre os itens do menu */
 }
 
 nav ul ul {
@@ -45,7 +46,7 @@ nav ul ul {
 
 nav ul ul li {
     width: 200px;
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Linha de destaque entre os itens do submenu */
 }
 
 nav ul ul li:last-child {
@@ -54,6 +55,16 @@ nav ul ul li:last-child {
 
 nav ul li:hover > ul {
     display: block;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s; /* Transição suave da cor do texto */
+}
+
+nav ul li a:hover {
+    color: #ff00ff; /* Cor de destaque ao passar o mouse */
 }
 
 @media (max-width: 768px) {
