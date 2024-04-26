@@ -24,6 +24,10 @@
             <input type="date" id="dataCriacao" name="dataCriacao" required>
         </div>
         <div class="form-group">
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" required>
+        </div>
+        <div class="form-group">
             <label for="endereco">Endereço:</label>
             <input type="text" id="endereco" name="endereco" required>
         </div>
@@ -44,12 +48,18 @@
             <input type="text" id="referencia" name="referencia">
         </div>
         <div class="form-group">
-            <label for="cep">CEP:</label>
-            <input type="text" id="cep" name="cep" required>
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
         </div>
+        <div class="form-group">
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required>
         <button type="submit">Cadastrar</button>
     </form>
 </div>
+
+<!-- Inclua o arquivo JavaScript -->
+<script src="Consultacep.js"></script>
 
 </body>
 </html>
