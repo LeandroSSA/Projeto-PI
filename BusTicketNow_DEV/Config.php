@@ -18,7 +18,7 @@ if ($conn === false) {
 // Função para inserir dados na tabela
 function inserirDados($conn, $nome, $cpf, $telefone, $email, $dataNascimento) {
     // Preparar a consulta SQL
-    $sql = "INSERT INTO TabelaClientes (Nome, CPF, Telefone, Email, DataNascimento) 
+    $sql = "INSERT INTO Cadastrousuario (Nome, CPF, Telefone, Email, DataNascimento) 
             VALUES (?, ?, ?, ?, ?)";
     
     // Parâmetros para a consulta SQL
