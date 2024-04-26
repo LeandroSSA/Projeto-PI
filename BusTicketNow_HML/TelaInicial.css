@@ -4,7 +4,11 @@ body {
     padding: 0;
     background-image: url('./Imagen/Fundo2.jpg');
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /*Centraliza a imagem na tela*/
+    justify-content: center;
+    height: 100vh;
+    
 }
 
 nav {
