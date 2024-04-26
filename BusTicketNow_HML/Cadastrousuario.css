@@ -7,7 +7,7 @@
 }
 
 body {
-    background: url(imagen/Fundo2.jpg);
+    background: url('./Imagen/Fundo2.jpg');
     background-size: cover; /* Cobrir toda a tela */
     background-position: center; /* Centraliza a imagem na tela */
     display: flex;
