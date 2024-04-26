@@ -1,0 +1,78 @@
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(imagen/Fundo.jpg);
+    background-size: cover; /* Cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem na tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    font-family: 'Roboto', sans-serif; /* Usar uma fonte mais moderna */
+}
+
+/* Estilos para o container do formulário */
+.container {
+    width: 380px;
+    margin-top: 390px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.603); /* Fundo semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.938); /* Sombra mais suave */
+}
+
+/* Estilos para os campos de entrada */
+.input-field {
+    margin-top: 20px;
+}
+
+.input-field label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333; /* Cor mais suave para o texto */
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ec6f08; /* Bordas mais suaves */
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.856); /* Fundo semi-transparente */
+}
+
+/* Estilos para o botão */
+button {
+    background-color: #0f9d58; /* Verde futurista */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0c7b42; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Estilos para o botão de fechar */
+.close-button {
+    background-color: #ff5722; /* Vermelho futurista */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+    background-color: #e04e1b; /* Tom mais escuro ao passar o mouse */
+}

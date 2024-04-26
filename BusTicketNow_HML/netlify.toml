@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/*"
+to = "/TelaInicial.html"
+status = 200
