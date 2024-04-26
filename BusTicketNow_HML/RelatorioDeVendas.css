@@ -6,7 +6,7 @@
 }
 
 body{
-    background: url(Imagen/Fundo2.jpeg);
+    background: url('./Imagen/Fundo2.jpg');
     background-size: cover;
     background-repeat: no-repeat; /* Evita que a imagem se repita */
     background-position: center; /*Centraliza a imagem na tela*/
