@@ -1,3 +1,4 @@
+
 /* Reset de estilos padrão */
 * {
     margin: 0;
@@ -76,3 +77,4 @@ button:hover {
 .close-button:hover {
     background-color: #e04e1b; /* Tom mais escuro ao passar o mouse */
 }
+
