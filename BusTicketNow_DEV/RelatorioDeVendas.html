@@ -33,7 +33,7 @@
         
         <!-- Botões para gerar, fechar e exportar para Excel -->
         <div class="center">
-            <button type="button" onclick="gerarRelatorio()">Gerar</button>
+            <button type="button" onclick="gerarRelatorio()">Gerar Relatório</button>
             <button class="close-button" onclick="window.close();">Fechar</button>
             <button onclick="exportarParaExcel()">Exportar para Excel</button>
         </div>
@@ -41,10 +41,13 @@
 
     <script>
         function gerarRelatorio() {
-            // Lógica para gerar o relatório com base nos campos selecionados
-            // Implemente conforme suas necessidades
+            // URL do arquivo PDF existente
+            const urlDoPDF = 'Rdl/Relatorio de Vendas.pdf';
+        
+            // Abrir o PDF em uma nova aba do navegador
+            window.open(urlDoPDF, '_blank');
         }
-
+        
         function exportarParaExcel() {
             // Lógica para exportar os dados para um arquivo Excel
             // Implemente conforme suas necessidades
