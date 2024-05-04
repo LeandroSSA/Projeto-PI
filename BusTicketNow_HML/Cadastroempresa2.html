@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Empresarial</title>
+    <link rel="stylesheet" href="Cadastroempresa2.css"> <!-- Vincular o arquivo CSS -->
+</head>
+<body>
+    <!-- Aba lateral com os botões -->
+    <div class="side-tab">
+        <button onclick="abrirCadastroEndereco()">Cadastrar Endereço</button>
+        <button onclick="abrirCadastroResponsavel()">Cadastrar Responsável</button>
+        <button type="submit">Cadastrar</button>
+        <button onclick="fecharTela()">Fechar</button>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="content">
+        <h1>Cadastro Empresarial</h1>
+
+        <!-- Formulário de Cadastro -->
+        <form id="cadastroForm">
+            <!-- Campo CNPJ -->
+            <div>
+                <label for="cnpj">CNPJ:</label>
+                <input type="text" id="cnpj" name="cnpj" required>
+            </div>
+            
+            <!-- Campo Nome Empresarial -->
+            <div>
+                <label for="nome">Nome Empresarial:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            
+            <!-- Campo Data de Criação -->
+            <div>
+                <label for="dataCriacao">Data de Criação:</label>
+                <input type="date" id="dataCriacao" name="dataCriacao" required>
+            </div>
+        </form>
+    </div>
+
+    <!-- Script para tratamento dos botões -->
+    <script>
+        function abrirCadastroEndereco() {
+            window.location.href = "cadastrarEndereco.html";
+        }
+
+        function abrirCadastroResponsavel() {
+            window.location.href = "cadastrarResponsavel.html";
+        }
+
+        function fecharTela() {
+            window.location.href = "TelaInicial.html";
+        }
+    </script>
+</body>
+</html>
