@@ -1,0 +1,90 @@
+/* Reset de margem e padding para o corpo da página */
+body {
+    background: url('./Imagen/Fundo2.jpg');
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Estilos para a aba lateral */
+.side-tab {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 180px;
+    background-color: #333;
+    margin-left: 10%;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilizar os botões na aba lateral */
+.side-tab button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito hover nos botões */
+.side-tab button:hover {
+    background-color: #777;
+}
+
+/* Estilos para o conteúdo principal */
+.content {
+    margin-left: 200px; /* Margem à esquerda para acomodar a aba lateral */
+    padding: 20px;
+}
+
+/* Estilizar o formulário */
+form {
+    background-color: #6e6cf357;
+    width: 55%;
+    margin-top: 10%;
+    margin-left: 12%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilizar os campos de entrada */
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilizar o botão de submit */
+form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito hover no botão de submit */
+form button[type="submit"]:hover {
+    background-color: #45a049;
+}

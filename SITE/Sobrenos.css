@@ -1,0 +1,55 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f8f8f842;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #007bff;
+    color: #fff;
+    /* Adiciona a imagem do logo como fundo */
+    background-image: url('./Imagem/LogoMarcabus.jpg');
+    background-size: 300px; /* Tamanho da imagem */
+    background-position: left; /* Posição centralizada da imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.story
+{
+    padding: 20px 50px;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    text-align: justify;
+    line-height: 2.0;
+}
+
+A {
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 2.0;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: #fff;
+}

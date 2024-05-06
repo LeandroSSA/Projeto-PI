@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Cadastrogeral.css">
+    <title>Cadastro de Endereço</title>
+    <!-- Inclua o arquivo JavaScript -->
+    <script src="Consultacep.js"></script>
+
+</head>
+<body>
+    <h1>Cadastro de Endereço</h1>
+
+    <!-- Formulário de Cadastro de Endereço -->
+    <form id="enderecoForm">
+
+        <!-- Campo CEP -->
+        <div>
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" required>
+        </div>
+
+        <!-- Campo Endereço -->
+        <div>
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+        </div>
+
+        <!-- Campo Número -->
+        <div>
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero" required>
+        </div>
+
+        <!-- Campo Bairro -->
+        <div>
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required>
+        </div>
+
+        <!-- Campo Complemento -->
+        <div>
+            <label for="complemento">Complemento:</label>
+            <input type="text" id="complemento" name="complemento">
+        </div>
+
+        <!-- Campo Referência -->
+        <div>
+            <label for="referencia">Referência:</label>
+            <input type="text" id="referencia" name="referencia">
+        </div>
+
+        <!-- Campo Cidade -->
+        <div>
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+        </div>
+
+        <!-- Campo Estado -->
+        <div>
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required>
+        </div>
+
+        <!-- Botão para cadastrar -->
+        <button type="submit">Cadastrar</button>
+
+        <!-- Botão para fechar -->
+        <button type="button" onclick="fecharTela()">Fechar</button>
+
+    </form>
+
+    <!-- Script para tratar o botão "Fechar" -->
+    <script>
+        function fecharTela() {
+            // Redirecionar para a tela inicial (página inicial)
+            window.location.href = "TelaInicial.html"; // Substitua "index.html" pelo caminho da sua tela inicial
+        }
+    </script>
+
+</body>
+</html>

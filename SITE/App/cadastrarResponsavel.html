@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Cadastrogeral.css">
+    <title>Cadastro de Responsável</title>
+</head>
+<body>
+    <h1>Cadastro de Responsável</h1>
+
+    <!-- Formulário de Cadastro de Responsável -->
+    <form id="responsavelForm">
+
+        <!-- Campo Nome -->
+        <div>
+            <label for="nomeResponsavel">Nome do Responsável:</label>
+            <input type="text" id="nomeResponsavel" name="nomeResponsavel" required>
+        </div>
+
+        <!-- Campo Cargo -->
+        <div>
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo" name="cargo" required>
+        </div>
+
+        <!-- Campo Telefone -->
+        <div>
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" required>
+        </div>
+
+        <!-- Botão para cadastrar -->
+        <button type="submit">Cadastrar</button>
+
+        <!-- Botão para fechar -->
+        <button type="button" onclick="fecharTela()">Fechar</button>
+
+    </form>
+
+    <!-- Script para tratar o botão "Fechar" -->
+    <script>
+        function fecharTela() {
+            // Redirecionar para a tela inicial (página inicial)
+            window.location.href = "TelaInicial.html"; // Substitua "index.html" pelo caminho da sua tela inicial
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+/* Reset básico para remover estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('./Imagen/Fundo2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /*Centraliza a imagem na tela*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #11010177;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin-right: 900px;
+    background: #f5f7f842;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgb(0, 0, 0);
+}
+
+h2 {
+    text-align: center;
+    color: #0a0000;
+    margin-bottom: 20px;
+}
+
+.input-field,
+.checkbox-field {
+    margin-bottom: 15px;
+}
+
+.input-field label,
+.checkbox-field label {
+    display: block;
+    margin-bottom: 5px;
+    color: #050000;
+}
+
+.input-field input[type="date"],
+.checkbox-field input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #020211e8;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.checkbox-field {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-field input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Botões */
+button {
+    padding: 10px 15px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button[type="button"] {
+    background-color: #5cb85c;
+    color: rgb(12, 1, 1);
+}
+
+button[type="button"]:hover {
+    background-color: #4cae4c;
+}
+
+.close-button {
+    background-color: #d9534f;
+    color: rgb(12, 1, 1);
+}
+.close-button:hover {
+    background-color: #c9302c;
+}
+
+/* Botão de exportar para Excel */
+button[onclick="exportarParaExcel()"] {
+    background-color: #f0ad4e;
+    color: rgb(12, 1, 1);
+}
+
+button[onclick="exportarParaExcel()"]:hover {
+    background-color: #ec971f;
+}
